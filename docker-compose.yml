@@ -1,9 +1,11 @@
 services:
   application:
-    image: ghcr.io/as-kilta/coffeecam:latest
+    image: ghcr.io/as-kilta/coffeewebsite:latest
     env_file: .env
     restart: unless-stopped
     user: 0:0
     volumes:
       - /mnt/ramdisk:/mnt/ramdisk
       - ./file.txt:/coffee/thoughts.txt
+    ports:
+      - 8000:8000
