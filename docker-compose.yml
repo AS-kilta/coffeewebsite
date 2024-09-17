@@ -1,0 +1,9 @@
+services:
+  application:
+    image: ghcr.io/as-kilta/coffeecam:latest
+    env_file: .env
+    restart: unless-stopped
+    user: 0:0
+    volumes:
+      - /mnt/ramdisk:/mnt/ramdisk
+      - ./file.txt:/coffee/thoughts.txt
