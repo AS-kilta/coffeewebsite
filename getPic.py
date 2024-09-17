@@ -14,7 +14,6 @@ def getImage() -> bool:
 	url = f"rtsp://{TAPO_USERNAME}:{TAPO_PASSWORD}@{HOST}:{PORT}/stream1"
 	savePath = IMG_PATH
 
-	print(savePath)
 	try:
 		stream = cv2.VideoCapture(url)
 	except Exception as g:

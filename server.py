@@ -18,5 +18,4 @@ async def root(request: Request):
 	thoughts = []
 	with open(coffeeThoughtsPath, "r") as ff:
 		thoughts = [thing for thing in ff.read().split("\n")[::-1] if thing != ""]
-	print(thoughts)
 	return templates.TemplateResponse("index.html", {"request": request, "thoughts": thoughts})
