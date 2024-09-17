@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     user: 0:0
     volumes:
-      - /mnt/ramdisk:/mnt/ramdisk
-      - ./file.txt:/coffee/thoughts.txt
+      # - /mnt/ramdisk:/mnt/ramdisk
+      - ./file.txt:/coffeeWebsite/thoughts.txt
     ports:
       - 8000:8000
