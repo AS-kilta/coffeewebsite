@@ -8,7 +8,7 @@ from getPic import getImage
 app = FastAPI()
 
 templates = Jinja2Templates(directory="templates")
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/mnt", StaticFiles(directory="static"), name="static")
 
 coffeeThoughtsPath = config("THOUGHTS_PATH")
 
