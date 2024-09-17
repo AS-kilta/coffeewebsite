@@ -5,8 +5,10 @@
 	<h1 style="text-align:center;font-size: 100px;">Coffee Status</h1>
 	<div style="height:90%">
 		<img src="/static/pic.png" alt="Italian Trulli" style="width:100%;">
+		<ul>
 		{% for thou in thoughts %}
-			<p style="font-size: 40px">{{thou}}</p>
+			<li style="font-size: 40px">{{thou}}</li>
 		{% endfor %}
+		</ul>
 	</div>
 </body>
