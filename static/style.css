@@ -4,7 +4,7 @@ h1 {
   font-style: normal;
   text-align: center;
   font-size: 100px;
-  margin: 40px;
+  margin: 30px;
 }
 
 img {
@@ -34,23 +34,21 @@ li {
   /* background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
   color: rgba(255, 255, 255, 0.357);
   background-clip: text; */
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
   width: 80%;
   padding: 0;
 }
 
 .ai-font {
   font-family: "Space Mono", system-ui;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 40px;
   opacity: 70%;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 @property --gradient-angle {
@@ -92,14 +90,12 @@ AS Värit
 */
 
 .ai-gradient {
-  background: conic-gradient(from var(--gradient-angle), #610396, #08ae9e, blue, #610396, red, #610396);
+  background: conic-gradient(from var(--gradient-angle), #610396, #08ae9e, #610396, blue, #610396, red, #610396);
   animation: rotation 15s linear infinite, breathing 10s ease-in-out infinite;
 
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
 
   border-radius: 20px;
   
@@ -114,7 +110,7 @@ AS Värit
   position: relative;
   
   p {
-    padding: 20px;
+    padding: 10px;
   }
 }
 
