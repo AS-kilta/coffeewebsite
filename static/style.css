@@ -31,9 +31,9 @@ li {
   font-weight: 400;
   font-style: normal;
   font-size: 60px;
-  background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
+  /* background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
   color: rgba(255, 255, 255, 0.357);
-  background-clip: text;
+  background-clip: text; */
   margin-top: 30px;
   margin-bottom: 10px;
   margin-left: 50px;
@@ -79,7 +79,7 @@ li {
     --blur-radius: 10px;
   }
   50% {
-    --blur-radius: 20px;
+    --blur-radius: 30px;
   }
   100% {
     --blur-radius: 10px;
@@ -89,11 +89,6 @@ li {
 /*
 AS Värit
 #610396, #bf99d6, #c2fcf2, #3dfce8
-
-TODO
-ai värit
-asettelut
-palkin muoto
 */
 
 .ai-gradient {
@@ -119,7 +114,7 @@ palkin muoto
   position: relative;
   
   p {
-    padding: 15px;
+    padding: 20px;
   }
 }
 
