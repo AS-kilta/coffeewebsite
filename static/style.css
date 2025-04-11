@@ -34,7 +34,7 @@ li {
   /* background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
   color: rgba(255, 255, 255, 0.357);
   background-clip: text; */
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 5px;
   width: 80%;
   padding: 0;
@@ -45,10 +45,10 @@ li {
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-  opacity: 60%;
   position: relative;
   margin: 0;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @property --gradient-angle {
