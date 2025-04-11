@@ -26,6 +26,14 @@ li {
   margin: auto;
 }
 
+.thoughts {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
 .ai-font-heading {
   font-family: "Jacquard 12", system-ui;
   font-weight: 400;
@@ -34,9 +42,8 @@ li {
   /* background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
   color: rgba(255, 255, 255, 0.357);
   background-clip: text; */
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 5px;
-  width: 80%;
   padding: 0;
 }
 
