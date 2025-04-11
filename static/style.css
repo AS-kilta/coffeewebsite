@@ -4,7 +4,7 @@ h1 {
   font-style: normal;
   text-align: center;
   font-size: 100px;
-  margin: 30px;
+  margin: 25px;
 }
 
 img {
@@ -42,13 +42,15 @@ li {
 
 .ai-font {
   font-family: "Space Mono", system-ui;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   font-size: 40px;
   position: relative;
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @property --gradient-angle {
@@ -91,7 +93,7 @@ AS Värit
 
 .ai-gradient {
   background: conic-gradient(from var(--gradient-angle), #610396, #08ae9e, blue, #610396, red, #610396);
-  animation: rotation 15s linear infinite, breathing 10s ease-in-out infinite;
+  animation: rotation 20s linear infinite, breathing 15s ease-in-out infinite;
 
   padding: 5px;
   margin-top: 10px;
@@ -113,7 +115,7 @@ AS Värit
 .ai-glow::before {
   content: "";
   position: absolute;
-  animation: breathing 10s ease-in-out infinite;
+  animation: breathing 15s ease-in-out infinite;
   filter: blur(calc(var(--blur-radius) / 2));
   background-color: white;
   border-radius: 20px;
