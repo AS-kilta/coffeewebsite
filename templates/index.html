@@ -1,13 +1,23 @@
 <head>
   <title>Coffee Cam</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-	<h1 style="text-align:center;font-size: 100px;">Coffee Status</h1>
-	<div style="height:90%">
-		<img src="/static/pic.png" alt="Italian Trulli" style="width:100%;">
+	<h1>Coffee Status</h1>
+	<div class="content">
+		<img src="/static/pic.png" alt="Italian Trulli">
+		<div class="ai-gradient">
+			<div class="ai-glow">
+				<h2 class="ai-font">ASki Intelligence says...</h2>
+			  <p class="ai-font">{{aiResponse}}</p>
+			</div>
+		</div>
 		<ul>
 		{% for thou in thoughts %}
-			<li style="font-size: 40px">{{thou}}</li>
+			<li>{{thou}}</li>
 		{% endfor %}
 		</ul>
 	</div>

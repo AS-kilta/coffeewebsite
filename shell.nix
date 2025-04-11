@@ -7,7 +7,9 @@
         opencv4
         python-decouple
         jinja2
-
+        portalocker
+        aiohttp
+        asyncio
       ];
     in with pkgs; [
       (python311.withPackages env)
