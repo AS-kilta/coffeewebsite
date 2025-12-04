@@ -13,6 +13,10 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 coffeeThoughtsPath = config("THOUGHTS_PATH")
 
+@app.head("/")
+async def head_root():
+    return {"status": "ok"}
+
 @app.get("/")
 async def root(request: Request):
 	getImage()
