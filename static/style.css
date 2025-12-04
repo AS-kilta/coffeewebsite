@@ -42,7 +42,7 @@ ul {
   font-family: "Jacquard 12", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 65px;
   /* background: linear-gradient(120deg, #10c3b1, #610396, red, orange);
   color: rgba(255, 255, 255, 0.357);
   background-clip: text; */
@@ -90,7 +90,7 @@ ul {
     --blur-radius: 15px;
   }
   50% {
-    --blur-radius: 30px;
+    --blur-radius: 45px;
   }
   100% {
     --blur-radius: 15px;
@@ -103,8 +103,9 @@ AS Värit
 */
 
 .ai-gradient {
-  background: conic-gradient(from var(--gradient-angle), #610396, #08ae9e, blue, #610396, red, #610396);
-  animation: rotation 20s linear infinite, breathing 15s ease-in-out infinite;
+  /*background: conic-gradient(from var(--gradient-angle), #610396, #08ae9e, blue, #610396, red, #610396);*/
+  background: linear-gradient(var(--gradient-angle), #610396, #618BFF, #08ae9e);
+  animation: rotation 20s linear infinite, breathing 10s ease-in-out infinite;
 
   padding: 5px;
   margin-top: 10px;
@@ -126,7 +127,7 @@ AS Värit
 .ai-glow::before {
   content: "";
   position: absolute;
-  animation: breathing 15s ease-in-out infinite;
+  animation: breathing 10s ease-in-out infinite;
   filter: blur(calc(var(--blur-radius) / 2));
   background-color: white;
   border-radius: 20px;
